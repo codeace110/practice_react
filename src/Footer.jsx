@@ -6,8 +6,8 @@ function Footer() {
             <footer className="bg-info text-center text-lg-start">
 
                 <div className="text-center p-3" >
-                    © 2020 Copyright:
-                    <strong>Group 7</strong>
+                    © 2022 Copyright:
+                    <strong> Group 7</strong>
                 </div>
 
             </footer>
