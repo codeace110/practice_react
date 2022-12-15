@@ -3,21 +3,23 @@ import Home from "./Home"
 import About from "./About"
 import Contact from "./Contact"
 import Notfound from "./Notfound"
-import NavbarFooter from "./NavbarFooter"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 
 function App() {
     return (
-
-            
+        <div>
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="*" element={<NavbarFooter/>} />
-                <Route path="*" element={<Notfound/>} />
+                <Route path="About" element={<About />} />
+                <Route path="Contact" element={<Contact />} />
+                <Route path="*" element={<Notfound />} />
             </Routes>
-      
+            <Footer />
+        </div>
+
     )
 }
 
