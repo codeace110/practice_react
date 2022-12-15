@@ -12,7 +12,7 @@ function Navbar() {
 
     return (
         <div>
-            <nav className="navbar container  navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-info  ">
                 
                 <button
                     className="navbar-toggler"
@@ -26,8 +26,8 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul className="navbar-nav">
+                <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                    <ul className="navbar-nav ">
                         {pages.map((page) => (
                             <li className='nav-item ms-4 p-3' key={page}>
                                 <a href={`/${page.toLowerCase()}`} className={page === currentPage ? 'fw-bold rounded-pill bg-white' : ''} style={{textDecorationLine: "none",color:"black", padding:'10px'}}>
