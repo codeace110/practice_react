@@ -1,8 +1,8 @@
 import { React, useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
-<<<<<<< HEAD:src/NavbarFooter.jsx
-function NavbarFooter() {
-=======
+// <<<<<<< HEAD:src/NavbarFooter.jsx
+// function NavbarFooter() {
+// =======
 function Navbar() {
     const pages = ['Home', 'About', 'Contact'];
     const [currentPage, setCurrentPage] = useState('Home');
@@ -13,7 +13,7 @@ function Navbar() {
         const page = pages.find((page) => `/${page.toLowerCase()}` === currentPath);
         setCurrentPage(page);
     }, [pages]);
->>>>>>> 1f52d0331dc21f93414cb8afefc42732303dd5df:src/Navbar.jsx
+// >>>>>>> 1f52d0331dc21f93414cb8afefc42732303dd5df:src/Navbar.jsx
     return (
         <div>
             <nav className="navbar container  navbar-expand-lg navbar-light bg-light">
@@ -39,20 +39,12 @@ function Navbar() {
                                 </a>
                             </li>
                         ))}
-                        {/* <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
-                        </li> */}
-                        {/* <li className="nav-item">
-                            <Link className="nav-link" to="contact">Contact</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="about">About</Link>
-                        </li> */}
+                        
                     </ul>
                 </div>
             </nav>
 
         </div>)
 }
-export default NavbarFooter
+export default Navbar
 
