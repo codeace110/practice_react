@@ -1,6 +1,19 @@
-import React from 'react';
+import { React, useState, useEffect } from 'react';
 import { Link } from "react-router-dom"
+<<<<<<< HEAD:src/NavbarFooter.jsx
 function NavbarFooter() {
+=======
+function Navbar() {
+    const pages = ['Home', 'About', 'Contact'];
+    const [currentPage, setCurrentPage] = useState('Home');
+
+    useEffect(() => {
+        // Update the current page in the component state when the user navigates to a different page
+        const currentPath = window.location.pathname;
+        const page = pages.find((page) => `/${page.toLowerCase()}` === currentPath);
+        setCurrentPage(page);
+    }, [pages]);
+>>>>>>> 1f52d0331dc21f93414cb8afefc42732303dd5df:src/Navbar.jsx
     return (
         <div>
             <nav className="navbar container  navbar-expand-lg navbar-light bg-light">
@@ -19,15 +32,22 @@ function NavbarFooter() {
 
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                        <li className="nav-item active">
+                        {pages.map((page) => (
+                            <li className='nav-item ms-4 p-3' key={page}>
+                                <a href={`/${page.toLowerCase()}`} className={page === currentPage ? 'fw-bold text-white' : ''} style={{textDecorationLine: "none",color:"black"}}>
+                                    {page}
+                                </a>
+                            </li>
+                        ))}
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
+                        </li> */}
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="contact">Contact</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="about">About</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </nav>
