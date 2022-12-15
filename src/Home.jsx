@@ -1,20 +1,20 @@
-import {useState, useEffect} from 'react';
+// import {useState, useEffect} from 'react';
 
 
 function Home() {
-  const {posts, setPosts} = useState([]);
+  // const {posts, setPosts} = useState([]);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response => response.json())
-    .then(data => {
-      setPosts(data.slice(0, 10));
-    });
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/posts')
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     setPosts(data.slice(0, 10));
+  //   });
+  // }, []);
   
   return (
     <table className ="table">
-      <tbody>
+      {/* <tbody>
         <tr>
           {posts.map(post => {
             <tr key={post.id}>
@@ -24,7 +24,7 @@ function Home() {
             </tr>
           })}
         </tr>
-      </tbody>
+      </tbody> */}
     </table>
   );
 }
