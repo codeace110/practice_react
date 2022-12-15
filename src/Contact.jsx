@@ -3,7 +3,7 @@ import './styles.css';
 
 function Contact() {
     return (
-        <>
+        
         <div className="page-container">
          <div className="column">
            <h1 className="pt-5 mt-5">Contact Info</h1>
@@ -18,7 +18,7 @@ function Contact() {
             <iframe width="650" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=561&amp;height=601&amp;hl=en&amp;q=%20taguig%20kodego+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 </div>
     </div>
-    </>
+    
 
 
 
