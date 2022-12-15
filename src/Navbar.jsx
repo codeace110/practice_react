@@ -18,7 +18,7 @@ function Navbar() {
                     <ul className="navbar-nav">
                         {pages.map((page) => (
                             <li className='nav-item ms-4 p-3' key={page}>
-                                <a href={`/${page.toLowerCase()}`} className={page === currentPage ? 'fw-bold text-white' : ''} style={{textDecorationLine: "none",color:"black"}}>
+                                <a href={`/${page.toLowerCase()}`} className={page === currentPage ? 'fw-bold rounded-pill bg-white' : ''} style={{textDecorationLine: "none",color:"black", padding:'10px'}}>
                                     {page}
                                 </a>
                             </li>
