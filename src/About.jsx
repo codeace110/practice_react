@@ -36,16 +36,16 @@ function createCards() {
 
   // kung may mali paki change nalang
   const cardData = [
-    { title: "sample1", subtitle: "Moto", text: "\"Web development: because solving real-world problems is too hard\"" },
-    { title: "sample2", subtitle: "Moto", text: "\"We make websites, not miracles\”" },
-    { title: "sample3", subtitle: "Moto", text: "\"We build websites like your ex builds relationships\"" },
-    { title: "sample4", subtitle: "Moto", text: "\"Code, coffee, and chaos\"" },
-    { title: "sample4", subtitle: "Moto", text: "\"Code today, nap tomorrow\"" },
+    { title110: "sample1", subtitle110: "Moto", text110: "\"Web development: because solving real-world problems is too hard\"" },
+    { title110: "sample2", subtitle110: "Moto", text110: "\"We make websites, not miracles\”" },
+    { title110: "sample3", subtitle110: "Moto", text110: "\"We build websites like your ex builds relationships\"" },
+    { title110: "sample4", subtitle110: "Moto", text110: "\"Code, coffee, and chaos\"" },
+    { title110: "sample4", subtitle110: "Moto", text110: "\"Code today, nap tomorrow\"" },
   ];
 
   for (let i = 0; i < cardData.length; i++) {
     let card110 = createCard(cardData[i].title110, cardData[i].subtitle110, cardData[i].text110);
-    cards.push(card);
+    cards.push(card110);
   }
   return (
       <div className='cards110' style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap",}}>
