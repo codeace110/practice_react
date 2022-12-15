@@ -11,6 +11,7 @@ function Home() {
       setPosts(data.slice(0, 10));
     });
   }, []);
+  
   return (
     <table className ="table">
       <tbody>
