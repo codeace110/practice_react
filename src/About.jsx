@@ -44,12 +44,12 @@ function createCards() {
   ];
 
   for (let i = 0; i < cardData.length; i++) {
-    let card = createCard(cardData[i].title, cardData[i].subtitle, cardData[i].text);
+    let card110 = createCard(cardData[i].title110, cardData[i].subtitle110, cardData[i].text110);
     cards.push(card);
   }
   return (
       <div className='cards110' style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap",}}>
-        {cardData.map(card => createCard(card.title, card.subtitle, card.text))}
+        {cardData.map(card => createCard(card.title110, card.subtitle110, card.text110))}
       </div>
   );
 }
