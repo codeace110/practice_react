@@ -1,23 +1,11 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-function NavbarFooter() {
+function Navbar() {
     return (
         <div>
-            <nav className="navbar container  navbar-expand-lg navbar-light bg-light">
-                
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNavDropdown"
-                    aria-controls="navbarNavDropdown"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+            <nav className="navbar bg-info flex-row navbar-expand-lg navbar-dark">
 
-                <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                <div className="mx-5 collapse navbar-collapse d-flex flex-row-reverse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
                         <li className="nav-item active">
                             <Link className="nav-link" to="/">Home</Link>
@@ -31,8 +19,8 @@ function NavbarFooter() {
                     </ul>
                 </div>
             </nav>
-
+  
         </div>)
 }
-export default NavbarFooter
+export default Navbar
 
